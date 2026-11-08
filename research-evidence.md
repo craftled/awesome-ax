@@ -1,6 +1,6 @@
 # Research evidence
 
-This file records the evidence behind each entry. It was last reviewed on 2026-11-07 (Europe/Vilnius).
+This file records the evidence behind each entry. The initial review was on 2026-11-07 (Europe/Vilnius); source 32 was added on 2026-11-08 (UTC), without re-reviewing earlier entries.
 
 ## Method and limits
 
@@ -14,7 +14,7 @@ This file records the evidence behind each entry. It was last reviewed on 2026-1
 - **Authorship:** the initial entries and notes were drafted with AI assistance from fetched source text, then approved for publication by the maintainer.
 - **License:** source 25 is the complete CC0 1.0 legal text fetched directly from https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt and copied unchanged into LICENSE. It was handled separately from the AI-assisted drafting.
 
-## Included entries: 23 resources plus 2 related lists
+## Included entries: 24 resources plus 2 related lists
 
 | ID | Resource | Section | Status | Version / date observed | Coverage of fetched text | Why included |
 |---|---|---|---|---|---|---|
@@ -36,6 +36,7 @@ This file records the evidence behind each entry. It was last reviewed on 2026-1
 | 21 | AIP-151 | Reliability & Recovery | guidance (approved AIP) | Created 2019-07-25; changelog runs to 2025-02-04 | Full page | Long-running operation pattern. |
 | 16 | A2A: Life of a Task | Reliability & Recovery | protocol guide | Current latest documentation | Full page | Explicit task lifecycle, IDs, input-required and terminal outcomes; practical recovery interface rather than another general announcement. |
 | 20 | Stripe: Idempotent requests | Reliability & Recovery | vendor docs | No page date; examples show Stripe-Version 2026-10-28.preview | Idempotency section read in full; adjacent sections ignored | A concrete safe-retry example. Not a universal guarantee. |
+| 32 | [agent-qa](https://vostride.com) | Evaluation | tool | Official documentation read 2026-11-08; unversioned pages | [Overview](https://vostride.com/docs/agent-qa), quickstart prerequisites, README feature summary, [license](https://vostride.com/license.md) and [pricing](https://vostride.com/pricing.md); five official page fetches returned HTTP 200 | Runs natural-language product journeys through a QA agent, with persistent memidex memory, validated self-improvement and reviewable execution evidence. Relevance to agent usability is inferred; early-stage, FSL competing-use limits and external model/infrastructure costs. No runtime or benchmark executed. |
 | 2 | Demystifying evals for AI agents (Anthropic) | Evaluation | guidance | Published 2026-01-09 (verified with original-page fetch) | Full article | Eval vocabulary, grader types and pass@k versus pass^k. |
 | 22 | MCP Inspector | Evaluation | tool | Current README describes a v2 line; no version number relied on | README only; docs/ guides not read | Deterministic, model-free server checks. |
 | 27 | Playwright ARIA snapshots | Evaluation | tool | No date in text | Full page | Regression tests for accessibility-tree structure. Relevance to agents is inferred. |
@@ -88,10 +89,10 @@ This file records the evidence behind each entry. It was last reviewed on 2026-1
 
 ## Verification inventory
 
-31 original-source fetches (including CC0), all returned HTTP 200. Two related GitHub URLs were also resolved publicly. Source reads verify availability and support for annotations, not runtime correctness. A2A `/latest/` and unversioned vendor documentation can change; evidence reflects this review date.
+Initial review: 31 original-source fetches (including CC0), all returned HTTP 200. Two related GitHub URLs were also resolved publicly. Source reads verify availability and support for annotations, not runtime correctness. A2A `/latest/` and unversioned vendor documentation can change; evidence reflects this review date.
 
 Outstanding: no bespoke AX task suite run against a real product, no independent replication of vendor measurements, and no certification of standard adoption or security.
 
 ## Final link and artifact checks
 
-All 25 external README links were fetched again after final edits and returned HTTP 200. Every relative Markdown file link resolves. LICENSE is byte-identical to the CC0 legal text fetched as source 25. These are availability/consistency checks, not security or production tests. No workflow was created or enabled.
+Initial review: all 25 external README links were fetched again after final edits and returned HTTP 200. Every relative Markdown file link resolves. LICENSE is byte-identical to the CC0 legal text fetched as source 25. These are availability/consistency checks, not security or production tests. No workflow was created or enabled.
